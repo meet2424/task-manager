@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use('/api/task', taskRoutes);
 
-app.get('/', async (req, res) => {
+app.get('/api', async (req, res) => {
   res.send('connected to task-manager');
 });
 
